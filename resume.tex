@@ -1,0 +1,99 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Ran Feng}
+
+\basicInfo{
+  \email{ranf@usc.edu} \textperiodcentered\ 
+  \phone{(213)-284-2776} \textperiodcentered\ 
+  \linkedin[ranf999]{https://www.linkedin.com/in/ranf999}}
+
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{University of Southern California}, Los Angeles, CA}{2016 -- Present}
+\textit{Master student} in Computer Science(General), expected May 2018
+\datedsubsection{\textbf{Sichuan University}, Chengdu, China}{2012 -- 2016}
+\textit{B.S.} in Computer Science     GPA:3.6/4.0
+
+\section{\faCogs\ Skill Highlights}
+\begin{itemize}[parsep=0.5ex]
+  \item Programming Languages: C/C++, Java, Python 
+  \item Operatin System: Linux
+  \item Web Development: SpringMVC, Mybatis, MySQL
+  \item Other: Cocos2d-x Game Engine, Flink, Hbase, Vim, Git
+\end{itemize}
+
+\section{\faUsers\ Experience}
+\datedsubsection{\textbf{Didi Chuxing} Beijing, China}{5/2017 -- 8/2017}
+\role{Summer Intern}{Manager: Qiuye Zheng}
+1.Development of Real-time multi-dimensional data analysis system
+Brief introduction: Compute the real-time amount of orders of different user level and driver level in different city.
+\role{Apache Flink, Hbase, Phoenix, Druid}
+\begin{itemize}
+  \item Implemented real-time stream data processing by Flink, joined the offline user and driver level data using Phoenix and Hbase, supported OLAP functions by Druid.
+  \item The latency of stream data processing decreased over 25\%.
+\end{itemize}
+
+2.Tableau add-on functions development
+Brief introduction: Automatically synchronize the Tableau workbooks, authorization and UV, PV data to the uniform report system in Didi Chuxing. Optimized data extraction scheduling for Tableau.
+\role{SpringMVC, MySQL, RESTful API}
+\begin{itemize}
+  \item Using thread pool to control the threads for downloading workbooks and parsing workbooks metadata.
+  \item Using Highest Response Ratio Next algorithm to adjust the priority of data extraction tasks.
+  \item The average blocking time of data extraction tasks decreased 50\%.
+\end{itemize}
+
+
+\datedsubsection{\textbf{Weenix-Operating System}}{Jan. 2017 -- Apr. 2017}
+\role{C, Linux}{Group Projects}
+Brief introduction: Implemented three parts of an Unix-like operating system kernel – threads and processes, virtual file system(VFS) and virtual memory.
+\begin{itemize}
+  \item Implemented the process controller, thread queue, thread scheduler and synchronization primitives.
+  \item Developed the functions and system calls of VFS and virtual memory management.
+  \item Developed on Linux using C and debugging with GDB.
+\end{itemize}
+
+\datedsubsection{\textbf{Campus RPG Navigation Mobile Game Based on Cocos2d-x}}{Nov. 2013 -- Aug. 2015}
+\role{C++, Cocos2d-x, JNI}{Group Projects, team leader}
+Brief introduction: Designed an Mobile RPG game with concrete storyline to promote campus culture and guide first-year students around campus with real campus map and GPS navigation.
+\begin{itemize}
+  \item Implemented the physics engine, event trigger strategy, battle system, and GPS navigation module.
+  \item Implemented communication between JAVA and C++ with JNI.
+  \item 8000+ lines of code, published on Wandoujia(Chinese Largest Android AppStore) with 1000+ downloads, won the 1st Prize in Sichuan University Software Design Competition.
+\end{itemize}
+
+\datedsubsection{\textbf{Monitoring and Control System for Indoor Environment Based on Arduino}}{Jan. 2016 -- Apr. 2016}
+\role{C, Java, Mybatis, Arduino}{Individual Project}
+Brief introduction: Monitors indoor environment through various sensors and displays data on a web interface or an Android application.
+\begin{itemize}
+  \item Developed an Arduino module for each environment sensor, wrote the network transmission program and transmitted data through GPRS using SIM908 module.
+  \item Using Jsp+Servlet+Mybatis framework and MySQL database. Developed Android WebApp.
+  \item Outstanding undergraduate graduation design.
+\end{itemize}
+
+\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
+\role{\LaTeX, Maintainer}{Individual Projects}
+An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
+\begin{itemize}
+  \item Easy to be further customized or extended
+  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
+  \item FontAwesome 4.5.0 support
+\end{itemize}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
