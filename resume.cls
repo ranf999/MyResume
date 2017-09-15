@@ -32,11 +32,11 @@
 ]{texgyretermes}
 
 \RequirePackage[
-	a4paper,
-	left=0.8in,
-	right=0.8in,
-	top=0.70in,
-	bottom=0.55in,
+	letterpaper,
+	left=0.7in,
+	right=0.7in,
+	top=0.5in,
+	bottom=0.5in,
 	nohead
 ]{geometry}
 
@@ -71,6 +71,7 @@
 \newcommand{\datedline}[2]{%
   {\par #1 \hfill #2 \par}%
 }
+\renewcommand{\baselinestretch}{.8}
 
 \newcommand{\name}[1]{
   \centerline{\Huge\scshape{#1}}
